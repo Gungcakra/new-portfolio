@@ -1,0 +1,123 @@
+[
+  {
+    "id": 1,
+    "title": "Kamikaze Tattoo",
+    "description": "A website for a tattoo studio in Kuta, Bali, that offers many tattoo styles, from detailed black and gray to bright colors and traditional Bali designs.",
+    "thumbnail": null,
+    "images": ["/assets/projects/kamikaze.webp"],
+    "techStack": ["Laravel", "MySQL", "Bootstrap"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 2,
+    "title": "Kanndra Villa",
+    "description": "A management system for a villa in Ubud, Bali, that helps handle bookings, villa information, and pricing. Also worked on the front-end of the villa detail page to make it clear, attractive, and easy to explore.",
+    "thumbnail": null,
+    "images": ["/assets/projects/kanndravilla.webp"],
+    "techStack": ["Laravel", "MySQL", "Bootstrap"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "FastTekno 2025",
+    "description": "The official website for the annual FASTTEKNO IT competition made together with UKM Progress. Worked as a front-end developer for the user and admin interface.",
+    "thumbnail": null,
+    "images": ["/assets/projects/fasttekno.webp"],
+    "techStack": ["Astro JS", "TypeScript", "Tailwind CSS"],
+    "liveUrl": "https://fasttekno-itbstikombali.com/",
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "BSM Cruise Services Queue System",
+    "description": "A simple and reliable queue system for BSM Cruise Services Indonesia to help manage applicant flow during recruitment so check-in is smoother and staff stays organized.",
+    "thumbnail": null,
+    "images": ["/assets/projects/bsm.webp"],
+    "techStack": ["Laravel", "Livewire", "Bootstrap"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 5,
+    "title": "FSM Queue System",
+    "description": "A queue system for Five Star Marine Services Corporation that helps organize and manage applicants, crew, and visitors more efficiently and orderly.",
+    "thumbnail": null,
+    "images": ["/assets/projects/fsm.webp"],
+    "techStack": ["Laravel", "Livewire", "Bootstrap"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "BTKV E-Logbook",
+    "description": "An e-logbook system for the Thoracic, Cardiac, and Vascular Surgery Program (BTKV) at Udayana University to record surgery data from doctors and support future research needs.",
+    "thumbnail": null,
+    "images": ["/assets/projects/btkv.webp"],
+    "techStack": ["Laravel", "Livewire", "Bootstrap"],
+    "liveUrl": "https://btkvfkudayana.com/",
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "GMTI XXIV",
+    "description": "An annual IT student event focused on building character in new students during rapid technology development. With the theme 'Smaranaya Cakradiya: Uniting Digital Footprints, Igniting the Future', this project provides technical support for the event.",
+    "thumbnail": null,
+    "images": ["/assets/projects/gmti.webp"],
+    "techStack": ["Laravel", "Vue.js"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "Ivira Beauty",
+    "description": "A premium beauty center in Bali that helps clients feel confident through professional self-care services and quality transformations. Built a smooth booking system to make scheduling appointments and managing reservations easy and flexible.",
+    "thumbnail": null,
+    "images": ["/assets/projects/ivira.webp"],
+    "techStack": ["Laravel", "Livewire", "Bootstrap"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Telerehab",
+    "description": "A platform that connects doctors, therapists, and patients to support remote recovery. Provides patient assessments, rehabilitation goals, therapy video guides, exercise tracking, medicine recommendations, digital approvals, and home exercise video uploads for professional review.",
+    "thumbnail": null,
+    "images": ["/assets/projects/telerehab.webp"],
+    "techStack": ["Laravel", "Livewire", "Tailwind CSS", "Alpine.js"],
+    "liveUrl": "https://telerehab.gretiva.com",
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "SMP Negeri 15 Denpasar",
+    "description": "A school profile website for SMP Negeri 15 Denpasar that presents key information clearly, including school programs, facilities, achievements, news, and announcements, making it easier for students, parents, and the public to stay informed.",
+    "thumbnail": null,
+    "images": ["/assets/projects/smpn15dps.webp"],
+    "techStack": ["WordPress"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 11,
+    "title": "Big Party Computer",
+    "description": "A real-time service monitoring system where customers can check the repair status of their devices through a website using their receipt number, providing transparent progress updates and a smoother service experience.",
+    "thumbnail": null,
+    "images": ["/assets/projects/bigpartycomputer.webp"],
+    "techStack": ["Laravel", "Livewire", "Tailwind CSS"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  }
+]

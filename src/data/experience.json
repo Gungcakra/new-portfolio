@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "role": "Android Developer",
+    "company": "Blue Lake Indonesia",
+    "period": "Mar 2023 - May 2023",
+    "description": "Build an Android-based application using Android Studio with Java and Firebase as the database",
+    "logo": null,
+    "type": "Intern"
+  },
+  {
+    "id": 2,
+    "role": "Backend Developer",
+    "company": "PT. Hooki Global Kreasi",
+    "period": "Sep 2023 - Des 2023",
+    "description": "Building a web-based system using Laravel and MySQL, including backend development, routing setup, and database integration.",
+    "logo": null,
+    "type": "Intern"
+  },
+  {
+    "id": 3,
+    "role": "Beginner Cloud Engineer",
+    "company": "PT. Bamboomedia Cipta Persada",
+    "period": "May 2023",
+    "description": "Operating AWS as a reliable server solution for efficiently storing and managing cloud-based data, ensuring scalability and security",
+    "logo": null,
+    "type": "Intern"
+  },
+  {
+    "id": 4,
+    "role": "Web Developer",
+    "company": "TempatKita Software",
+    "period": "May 2024 - September 2025",
+    "description": "Developing a web-based system using PHP and MySQL, along with the user interface designed with Bootstrap.",
+    "logo": null,
+    "type": "Part-time"
+  },
+  {
+    "id": 5,
+    "role": "Web Developer",
+    "company": "Gretiva Artha Group",
+    "period": "May 2025 - Present",
+    "description": "Developing full-stack web applications using modern technologies and best practices.",
+    "logo": null,
+    "type": "Part-time"
+  }
+]
