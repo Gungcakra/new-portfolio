@@ -27,16 +27,21 @@ const GRADIENTS = [
   'from-cyan-500 to-blue-600',
 ];
 
-export default function Portfolio() {
+export default function Portfolio({
+  id = 'portfolio',
+  title = 'Portfolio',
+  data = portfolioData,
+  className = 'bg-slate-50 dark:bg-slate-800/30',
+}) {
   const [selected, setSelected] = useState(null);
 
   return (
-    <section id="portfolio" className="py-24 bg-slate-50 dark:bg-slate-800/30">
+    <section id={id} className={`py-24 ${className}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <SectionTitle>Portfolio</SectionTitle>
+        <SectionTitle>{title}</SectionTitle>
 
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {portfolioData.slice().reverse().map(project => (
+          {data.slice().reverse().map(project => (
             <ProjectCard
               key={project.id}
               project={project}

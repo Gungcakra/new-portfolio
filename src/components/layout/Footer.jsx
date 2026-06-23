@@ -2,9 +2,9 @@ import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 const SOCIALS = [
-  { icon: FaGithub, href: 'https://github.com/cakrajaya', label: 'GitHub' },
-  { icon: FaLinkedin, href: 'https://linkedin.com/in/cakrajaya', label: 'LinkedIn' },
-  { icon: FaInstagram, href: 'https://instagram.com/cakrajaya', label: 'Instagram' },
+  { icon: FaGithub, href: 'https://github.com/gungcakra', label: 'GitHub' },
+  { icon: FaLinkedin, href: 'https://linkedin.com/in/cakra-jaya-323722338', label: 'LinkedIn' },
+  { icon: FaInstagram, href: 'https://instagram.com/caakrraaa', label: 'Instagram' },
   { icon: MdEmail, href: 'mailto:agungcakra888@gmail.com', label: 'Email' },
 ];
 

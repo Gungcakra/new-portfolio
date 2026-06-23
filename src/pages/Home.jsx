@@ -5,6 +5,7 @@ import About from '../components/sections/About';
 import Experience from '../components/sections/Experience';
 import Portfolio from '../components/sections/Portfolio';
 import Contact from '../components/sections/Contact';
+import personalData from '../data/personal.json';
 
 export default function Home({ dark, toggleDark }) {
   return (
@@ -15,7 +16,13 @@ export default function Home({ dark, toggleDark }) {
         <About />
         <Experience />
         <Portfolio />
-        <Contact />
+        <Portfolio
+          id="personal"
+          title="Personal Projects"
+          data={personalData}
+          className="bg-white dark:bg-slate-900"
+        />
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>

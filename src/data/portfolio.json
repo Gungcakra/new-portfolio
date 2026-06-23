@@ -119,5 +119,16 @@
     "liveUrl": null,
     "githubUrl": null,
     "featured": false
+  },
+  {
+    "id": 12,
+    "title": "Wedding Invitation",
+    "description": "A wedding invitation website that provides a digital platform for couples to share their special day with friends and family. It includes event details, RSVP functionality, and a gallery of memorable moments.",
+    "thumbnail": null,
+    "images": ["/assets/projects/wedding.webp"],
+    "techStack": ["React JS", "Tailwind CSS"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
   }
 ]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Computer Stores",
+    "description": "A simple web-based system for computer stores to manage their inventory, sales, and customer data. Built with Laravel and Bootstrap, this project serves as a portfolio piece to demonstrate my full-stack development skills and ability to create functional web applications.",
+    "thumbnail": "/assets/projects/computerstores.webp",
+    "images": ["/assets/projects/computerstores.webp"],
+    "techStack": ["Laravel","Bootstrap"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 2,
+    "title": "Trabook",
+    "description": "Travel Agency Landing Page built with React, Vite, and Tailwind CSS. This project serves as a portfolio piece to demonstrate my front-end development skills and design capabilities. It features a clean and modern design, responsive layout, and interactive elements to enhance user experience.",
+    "thumbnail": "/assets/projects/trabook.webp",
+    "images": ["/assets/projects/trabook.webp"],
+    "techStack": ["React", "Vite", "Tailwind CSS"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Kurokami",
+    "description": "Manhwa Reader web application built with Astro, TypeScript, and Tailwind CSS. This project is a personal endeavor to create a user-friendly platform for reading manhwa online. It features a clean and intuitive interface, responsive design, and efficient performance to provide an enjoyable reading experience.",
+    "thumbnail": "/assets/projects/kurokami.webp",
+    "images": ["/assets/projects/kurokami.webp"],
+    "techStack": ["Astro", "TypeScript", "Tailwind CSS"],
+    "liveUrl": null,
+    "githubUrl": null,
+    "featured": false
+  }
+]
