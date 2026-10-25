@@ -197,6 +197,16 @@ export const projects = [
     techStack: ['Laravel', 'Livewire', 'Tailwind CSS', 'Alpine.js', 'MySQL'],
   }),
   personal({
+    title: 'Berbagi Ruang & Kopi',
+    // Unofficial fan site for a café Cakra often visits
+    description:
+      'An unofficial website for Berbagi Ruang & Kopi, a coffee shop in Bali that I often visit, so I made it just for fun. It introduces the café and its three locations (Peguyangan, Mas Ubud and Sanur), shows the full menu with prices in tabs, covers its live music events and venue rental for gatherings and weddings, and has a photo gallery and an embedded map for each branch.',
+    image: shot('berbagikopi'),
+    techStack: ['React', 'Vite'],
+    githubUrl: 'https://github.com/Gungcakra/Berbagi-Kopi-Web',
+    liveUrl: 'https://berbagi-kopi.cakra-portfolio.my.id/',
+  }),
+  personal({
     title: 'Kuronime',
     // Summary of the repo README
     description:
