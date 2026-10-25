@@ -23,7 +23,7 @@ export default function Hero({ ready }) {
 
       <div className="container-x relative">
         {/* Giant word */}
-        <motion.h1 style={{ y: lettersY }} className="relative z-0 flex justify-between font-display leading-[0.82] select-none" aria-label="Portfolio">
+        <motion.div style={{ y: lettersY }} className="relative z-0 flex justify-between font-display leading-[0.82] select-none" aria-hidden>
           {WORD.map((ch, i) => (
             <span key={i} className="inline-block overflow-hidden" aria-hidden>
               <motion.span
@@ -36,7 +36,7 @@ export default function Hero({ ready }) {
               </motion.span>
             </span>
           ))}
-        </motion.h1>
+        </motion.div>
 
         {/* Portrait */}
         <motion.div
@@ -76,11 +76,11 @@ export default function Hero({ ready }) {
         <div className="relative z-20 -mt-[38vw] grid gap-10 pb-16 sm:-mt-[30vw] lg:-mt-[22rem] lg:grid-cols-[1fr_auto_1fr] lg:items-end lg:pb-20">
           <motion.div initial="hidden" animate={state} variants={{ show: { transition: { staggerChildren: 0.1, delayChildren: 0.9 } } }} className="max-w-md">
             <motion.p variants={fade} className="font-script text-5xl text-rose sm:text-6xl">Hello, I'm</motion.p>
-            <motion.h2 variants={fade} className="-mt-2 font-display text-[clamp(3.6rem,9vw,6.5rem)] leading-[0.9] uppercase text-cream">
+            <motion.h1 variants={fade} className="-mt-2 font-display text-[clamp(3.6rem,9vw,6.5rem)] leading-[0.9] uppercase text-cream">
               {profile.firstName}
               <br />
               {profile.lastName}
-            </motion.h2>
+            </motion.h1>
             <motion.p variants={fade} className="mt-4 text-lg font-bold tracking-wide uppercase text-crimson">
               {profile.role}
             </motion.p>
