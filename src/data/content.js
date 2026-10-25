@@ -92,7 +92,7 @@ export const experience = [
 const client = (p) => ({ ...p, kind: 'Client Project' });
 const personal = (p) => ({ ...p, kind: 'Personal Project' });
 
-// Featured order first (top 5 render as the bento grid), then the rest.
+// Client projects: the first five render as the bento grid, the rest as a list.
 export const projects = [
   client({
     title: 'Telerehab',
@@ -188,12 +188,32 @@ export const projects = [
     image: shot('wedding'),
     techStack: ['React JS', 'Tailwind CSS'],
   }),
+  client({
+    title: 'TJ Work',
+    // From the project's PRD / CLAUDE.md
+    description:
+      'A web-based automotive workshop management system that replaces manual record keeping with one central platform. It manages masterdata for spare parts, services and suppliers, customer invoices, stock receiving from suppliers with automatic stock updates, and four operational reports covering purchasing, invoices, part fulfillment and service fulfillment.',
+    image: shot('tjwork'),
+    techStack: ['Laravel', 'Livewire', 'Tailwind CSS', 'Alpine.js', 'MySQL'],
+  }),
+  personal({
+    title: 'Kuronime',
+    // Summary of the repo README
+    description:
+      "A website for watching anime with Indonesian subtitles, without ads. The home page shows recommendations, ongoing anime, today's schedule and the latest episodes, and you can explore titles with filters for genre, status, year and score, check the 7-day release schedule, or browse the list from A to Z. The video player supports multiple qualities and mirrors, playback speed, picture-in-picture, keyboard shortcuts and MP4 downloads. Favorites are bookmarked in the browser with no account needed, and the site works on both phones and desktops and can be installed as a PWA.",
+    image: shot('kuronime'),
+    techStack: ['Next.js', 'React'],
+    liveUrl: 'https://kuronime.cakra-portfolio.my.id/',
+    githubUrl: 'https://github.com/Gungcakra/kuronime',
+  }),
   personal({
     title: 'Kurokami',
     description:
       'Manhwa Reader web application built with Astro, TypeScript, and Tailwind CSS. This project is a personal endeavor to create a user-friendly platform for reading manhwa online. It features a clean and intuitive interface, responsive design, and efficient performance to provide an enjoyable reading experience.',
     image: shot('kurokami'),
     techStack: ['Astro', 'TypeScript', 'Tailwind CSS'],
+    liveUrl: 'https://kurokami.cakra-portfolio.my.id/',
+    githubUrl: 'https://github.com/Gungcakra/kurokami-manhwa-reader',
   }),
   personal({
     title: 'Trabook',
@@ -209,10 +229,34 @@ export const projects = [
     image: shot('computerstores'),
     techStack: ['Laravel', 'Bootstrap'],
   }),
+  personal({
+    title: 'GaragePro',
+    // Old Portfolio description + modules found in the repo (app/Livewire)
+    description:
+      'A comprehensive garage management system designed to streamline operations and enhance customer service. It covers services and spare parts, customers, employees and departments, the service workflow through to payment, cash flow, and operational service reports, with role-based access for each user.',
+    image: shot('garagepro'),
+    techStack: ['Laravel', 'Livewire', 'Tailwind CSS', 'Alpine.js', 'MySQL'],
+    liveUrl: 'https://garagepro.cakra-portfolio.my.id/',
+    githubUrl: 'https://github.com/Gungcakra/garage-pro',
+  }),
+  personal({
+    title: 'SIKOM',
+    // Summary of the repo README
+    description:
+      'SIKOM (Student Activity & Organization Information System) is a web-based system that makes it easier to run student organizations, from members and officers to activities and finances. It has three roles: members can browse activities and register online within the available quota, officers plan and manage activities and record income and expenses, and admins set up the organization structure and officer terms. It also generates annual activity and financial reports as charts or tables that can be downloaded as PDF or Excel, and a dashboard shows active members, activities and finances in real time.',
+    image: shot('sikom'),
+    techStack: ['Laravel', 'Livewire', 'Tailwind CSS', 'Alpine.js'],
+    liveUrl: 'https://sikom.cakra-portfolio.my.id/',
+    githubUrl: 'https://github.com/Gungcakra/sikom-rpl',
+  }),
 ];
+
+export const clientProjects = projects.filter((p) => p.kind === 'Client Project');
+export const personalProjects = projects.filter((p) => p.kind === 'Personal Project');
 
 // Counts straight from the data above
 export const stats = [
-  { value: projects.length, label: 'Projects' },
+  { value: clientProjects.length, label: 'Client\nProjects' },
+  { value: personalProjects.length, label: 'Personal\nProjects' },
   { value: experience.length, label: 'Experiences' },
 ];

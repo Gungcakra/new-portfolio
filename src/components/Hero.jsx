@@ -105,7 +105,7 @@ export default function Hero({ ready }) {
               </li>
             </motion.ul>
 
-            <motion.ul variants={fade} className="grid grid-cols-2 gap-4 lg:w-[260px] lg:grid-cols-1 lg:gap-0">
+            <motion.ul variants={fade} className="grid grid-cols-3 gap-4 lg:w-[260px] lg:grid-cols-1 lg:gap-0">
               {stats.map((s, i) => (
                 <li key={s.label} className="flex flex-col gap-1 border-line py-3 lg:flex-row lg:items-center lg:gap-4 lg:border-b lg:last:border-0">
                   <span className="font-display text-4xl lg:w-20 text-crimson sm:text-5xl">

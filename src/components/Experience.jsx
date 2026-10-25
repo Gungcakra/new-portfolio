@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <section id="experience" className="relative py-20 sm:py-28">
       <div className="container-x">
-        <SectionHead index="03" title="Experience" />
+        <SectionHead index="04" title="Experience" />
 
         <ol className="border-t border-line">
           {experience.map((e, i) => (

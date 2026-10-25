@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, X } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa6';
 import { lenis } from '../lib/lenis';
 import { ease } from './ui/Reveal';
+import NoShot from './ui/NoShot';
 
 export default function ProjectModal({ project, index, onClose }) {
   useEffect(() => {
@@ -46,14 +48,18 @@ export default function ProjectModal({ project, index, onClose }) {
 
             <div className="overflow-y-auto">
               <div className="relative aspect-[16/9] overflow-hidden bg-surface-2">
-                <motion.img
-                  src={project.image}
-                  alt={project.title}
-                  className="size-full object-cover object-top"
-                  initial={{ scale: 1.15 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 1.2, ease }}
-                />
+                {project.image ? (
+                  <motion.img
+                    src={project.image}
+                    alt={project.title}
+                    className="size-full object-cover object-top"
+                    initial={{ scale: 1.15 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 1.2, ease }}
+                  />
+                ) : (
+                  <NoShot title={project.title} />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent" />
               </div>
 
@@ -71,13 +77,17 @@ export default function ProjectModal({ project, index, onClose }) {
                       {project.techStack.map((t) => <span key={t} className="chip">{t}</span>)}
                     </div>
                   </div>
-                  {project.liveUrl ? (
+                  {project.liveUrl && (
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between bg-crimson px-5 py-4 text-xs font-bold tracking-[0.2em] uppercase text-cream transition hover:bg-[#b51a30]">
                       Visit Live Site
                       <ArrowUpRight size={18} className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
-                  ) : (
-                    <p className="border border-dashed border-line px-5 py-4 text-[11px] tracking-[0.18em] uppercase text-muted">Private / client project</p>
+                  )}
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="group -mt-3 flex items-center justify-between border border-line px-5 py-4 text-xs font-bold tracking-[0.2em] uppercase text-cream transition hover:border-crimson">
+                      <span className="flex items-center gap-2"><FaGithub size={16} /> View Source</span>
+                      <ArrowUpRight size={18} className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </a>
                   )}
                 </div>
               </div>

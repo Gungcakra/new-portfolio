@@ -4,7 +4,8 @@ import { scrollToId, lenis } from '../lib/lenis';
 import { ease } from './ui/Reveal';
 
 const LINKS = [
-  { id: 'work', label: 'Work' },
+  { id: 'work', label: 'Projects' },
+  { id: 'personal', label: 'Personal' },
   { id: 'about', label: 'About' },
   { id: 'experience', label: 'Experience' },
   { id: 'contact', label: 'Contact' },

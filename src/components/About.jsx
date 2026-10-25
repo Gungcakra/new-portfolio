@@ -10,7 +10,7 @@ export default function About() {
   return (
     <section id="about" className="relative py-20 sm:py-28">
       <div className="container-x">
-        <SectionHead index="02" title="About Me" />
+        <SectionHead index="03" title="About Me" />
 
         <div className="grid gap-px border border-line bg-line lg:grid-cols-12">
           {/* Statement */}

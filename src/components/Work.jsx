@@ -1,7 +1,7 @@
 import { useCallback, useRef, useState } from 'react';
 import { AnimatePresence, motion, useMotionValue, useSpring } from 'framer-motion';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
-import { projects } from '../data/content';
+import { clientProjects as projects } from '../data/content';
 import SectionHead from './ui/SectionHead';
 import Reveal, { ease } from './ui/Reveal';
 import ProjectModal from './ProjectModal';
@@ -17,7 +17,7 @@ export default function Work() {
   return (
     <section id="work" className="relative py-20 sm:py-28">
       <div className="container-x">
-        <SectionHead index="01" title="Selected Work" />
+        <SectionHead index="01" title="Client Projects" />
 
         <div className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-6">
           {projects.slice(0, FEATURED).map((p, i) => (
@@ -60,7 +60,6 @@ function FeaturedCard({ project, index, span, onOpen }) {
 
       <div>
         <h3 className="max-w-[12ch] font-display text-4xl leading-[0.95] uppercase text-cream sm:text-5xl">{project.title}</h3>
-        <p className="mt-3 text-[11px] tracking-[0.2em] uppercase text-cream/70">{project.kind}</p>
         <div className="mt-4 flex items-center justify-between">
           <p className="text-[11px] tracking-[0.15em] uppercase text-muted">{project.techStack.slice(0, 3).join(' · ')}</p>
           <span className="grid size-10 place-items-center rounded-full border border-line text-cream transition duration-500 group-hover:rotate-45 group-hover:border-crimson group-hover:bg-crimson">
@@ -92,7 +91,7 @@ function MoreProjects({ onOpen }) {
     <div className="mt-20">
       <Reveal className="mb-6 flex items-end justify-between gap-4">
         <h3 className="text-sm font-semibold tracking-[0.25em] uppercase">More Projects</h3>
-        <span className="eyebrow">{rest.length} more · client & personal</span>
+        <span className="eyebrow">{rest.length} more</span>
       </Reveal>
 
       <div ref={listRef} onPointerMove={move} onPointerLeave={() => setHover(null)} className="relative border-t border-line">
@@ -104,12 +103,11 @@ function MoreProjects({ onOpen }) {
                 onClick={() => onOpen(n)}
                 onPointerEnter={() => setHover(n)}
                 data-cursor="Open"
-                className="group relative isolate grid w-full grid-cols-[2.5rem_1fr_auto] items-center gap-4 overflow-hidden border-b border-line py-5 text-left sm:grid-cols-[3.5rem_1.4fr_1fr_1fr_auto] sm:py-7"
+                className="group relative isolate grid w-full grid-cols-[2.5rem_1fr_auto] items-center gap-4 overflow-hidden border-b border-line py-5 text-left sm:grid-cols-[3.5rem_1.4fr_1fr_auto] sm:py-7"
               >
                 <span className="absolute inset-0 -z-10 origin-bottom scale-y-0 bg-crimson-deep/40 transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-y-100" />
                 <span className="font-display text-xl text-crimson">{String(n + 1).padStart(2, '0')}</span>
                 <span className="font-display text-2xl uppercase text-cream transition-transform duration-500 group-hover:translate-x-3 sm:text-4xl">{p.title}</span>
-                <span className="hidden text-[11px] tracking-[0.2em] uppercase text-cream/60 sm:block">{p.kind}</span>
                 <span className="hidden text-[11px] tracking-[0.12em] uppercase text-muted sm:block">{p.techStack.join(' · ')}</span>
                 <ArrowRight size={20} className="text-cream/60 transition duration-500 group-hover:-rotate-45 group-hover:text-crimson" />
               </button>
