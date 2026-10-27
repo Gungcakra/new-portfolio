@@ -217,6 +217,16 @@ export const projects = [
     githubUrl: 'https://github.com/Gungcakra/kuronime',
   }),
   personal({
+    title: 'Kuroflix',
+    // Summary of the repo README
+    description:
+      'A website for watching movies and series. The home page has a featured slider, trending titles, network originals, collections, and the latest movies, series and episodes, and you can browse posters with filters for genre, year, country and sort order, or search and explore by genre. Detail pages show the backdrop, synopsis, cast, keywords and YouTube trailer, with a season tab and full episode list for series. The full-width player has an episode list on the side and supports quality, subtitles, playback speed, picture-in-picture, fullscreen and keyboard shortcuts. Favorites are bookmarked in the browser with no account needed, and the layout works on both phones and desktops.',
+    image: shot('kuroflix'),
+    techStack: ['Next.js', 'React', 'hls.js'],
+    liveUrl: 'https://kuroflix.cakra-portfolio.my.id/',
+    // githubUrl: 'https://github.com/Gungcakra/kuroflix',
+  }),
+  personal({
     title: 'Kurokami',
     description:
       'Manhwa Reader web application built with Astro, TypeScript, and Tailwind CSS. This project is a personal endeavor to create a user-friendly platform for reading manhwa online. It features a clean and intuitive interface, responsive design, and efficient performance to provide an enjoyable reading experience.',
