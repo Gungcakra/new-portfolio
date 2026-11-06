@@ -54,6 +54,14 @@ export const stack = [
 export const experience = [
   {
     role: 'Web Developer',
+    company: 'Catalyst Inertia',
+    period: 'Nov 2026 - Present',
+    type: 'Full-time',
+    location: 'Remote',
+    description: 'Building and maintaining web applications as part of a fully remote team, from feature development to bug fixing and deployment.',
+  },
+  {
+    role: 'Web Developer',
     company: 'Gretiva Artha Group',
     period: 'May 2025 - Present',
     type: 'Part-time',

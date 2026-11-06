@@ -61,7 +61,10 @@ function MobileTimeline() {
                 <span className="absolute inset-0 -z-10 origin-left scale-x-0 bg-gradient-to-r from-crimson-deep/40 to-transparent transition-transform duration-700 ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-x-100" />
                 <div className="flex items-start justify-between gap-4">
                   <span className="font-display text-3xl leading-none text-crimson">{String(i + 1).padStart(2, '0')}</span>
-                  <span className="chip">{e.type}</span>
+                  <span className="flex flex-wrap justify-end gap-2">
+                    {e.location && <span className="chip">{e.location}</span>}
+                    <span className="chip">{e.type}</span>
+                  </span>
                 </div>
                 <h3 className="mt-5 font-display text-3xl leading-none uppercase text-cream">{e.role}</h3>
                 <p className="mt-2 text-sm text-rose">{e.company}</p>
@@ -185,6 +188,7 @@ function Stop({ e, i, progress }) {
         <div className="flex items-center gap-4">
           <span className="font-display text-5xl leading-none text-crimson">{String(i + 1).padStart(2, '0')}</span>
           <span className="chip bg-ink/60">{e.type}</span>
+          {e.location && <span className="chip bg-ink/60">{e.location}</span>}
         </div>
 
         <div className="mt-auto">
